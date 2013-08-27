@@ -1,0 +1,7 @@
+.login-form {
+  width: 500px;
+}
+
+.login-form .error {
+  color: red;
+}

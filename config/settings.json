@@ -1,0 +1,16 @@
+{
+  "mongoose": {
+    "uri": "mongodb://localhost/chat",
+    "options": {
+      "server": {
+        "socketOptions": {
+          "keepAlive": 1
+        }
+      }
+    }
+  },
+  "port": 3000,
+  "session": {
+    "secret": "KillerIsJim"
+  }
+}

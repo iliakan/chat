@@ -1,0 +1,38 @@
+<% layout('/layout/chat') -%>
+<% block('title', "Чат") -%>
+
+<div id="room">
+  <ul class="list-unstyled"></ul>
+  <form>
+    <input autocomplete="off" autofocus value="Печатайте здесь...">
+  </form>
+</div>
+
+<script>
+  var input = $('#room input');
+  var ul  = $('#room ul');
+  var form = $('#room form');
+
+  var connection = new Connection();
+  connection.on('open', function()  {
+    $('<li>').text('соединение установлено').appendTo(ul);
+  });
+
+  connection.on('message', function(e, message) {
+    $('<li>').append(
+        $('<i>').text(message.username)
+    ).append('> ' + message.text)
+     .appendTo(ul);
+  });
+
+  connection.on('close', function(event)  {
+    $('<li>').text('соединение закрыто').appendTo(ul);
+  });
+
+  form.submit(function() {
+    connection.send({text: "test"});
+    input.val('');
+    return false;
+  });
+
+</script>
