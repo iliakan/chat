@@ -2,10 +2,7 @@ var HttpError = require('error').HttpError;
 
 module.exports = function(req, res, next) {
 
-  res.sendError = function(error) {
-    if ( !(error instanceof HttpError) ) {
-      error = new HttpError(500, "Server error");
-    }
+  res.sendHttpError = function(error) {
 
     res.status(error.status);
     if (res.req.headers['x-requested-with'] == 'XMLHttpRequest') {

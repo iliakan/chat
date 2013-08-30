@@ -109,7 +109,7 @@ Connection.prototype.closeOnError = function(err) {
   if (err instanceof HttpError) {
     this.close(err.status, err.message);
   } else {
-    log(err);
+    log.error(err);
     this.close();
   }
 };
@@ -132,18 +132,18 @@ Connection.prototype.onMessage = function(message) {
       callback();
     }
   ], function(err) {
-    log(err);
+    log.error(err);
     if (err) return self.closeOnError(err);
   })
 };
 
 Connection.prototype.loadSessionUser = function(session, callback) {
   if (session.user) {
-    log("retrieving user ", session.user);
+    log.debug("retrieving user ", session.user);
     User.findById(session.user, function(err, user) {
       if (err) return callback(err);
 
-      log("user findbyId result: " + user);
+      log.debug("user findbyId result: " + user);
       return callback(null, session, user);
     });
   } else {
@@ -170,4 +170,4 @@ Connection.prototype.loadSession = function(sid, callback) {
 };
 
 
-module.exports = Connection;
+exports.Connection = Connection;

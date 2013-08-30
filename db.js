@@ -5,6 +5,6 @@ var nconf = require('nconf');
 // Установим соединение с базой
 mongoose.connect(nconf.get('mongoose:uri'), nconf.get('mongoose:options'));
 
-log("DB initialized");
+log.info("DB initialized");
 
 module.exports = mongoose;

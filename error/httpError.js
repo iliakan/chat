@@ -1,13 +1,13 @@
 var util = require('util');
-var HTTPStatus = require('http-status');
+var http = require('http');
 
 // ошибки для выдачи посетителю
 function HttpError(status, message) {
   Error.apply(this, arguments);
-  Error.captureStackTrace(this, arguments.callee);
+  Error.captureStackTrace(this, HttpError);
 
   this.status = status;
-  this.message = message || HTTPStatus[status] || "Error";
+  this.message = message || http.STATUS_CODES[status] || "Error";
 }
 util.inherits(HttpError, Error);
 module.exports = HttpError;

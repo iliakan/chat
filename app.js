@@ -58,13 +58,22 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Обработка HttpError
 app.use(function(err, req, res, next) {
+  if (typeof err == 'number') {
+    err = new HttpError(err);
+  }
+
   if (err instanceof HttpError) {
-    res.sendError(err);
+    res.sendHttpError(err);
   } else {
-    next(err);
+    if (app.get('env') == 'development') {
+      express.errorHandler()(err, req, res, next);
+    } else {
+      log.error(err);
+      err = new HttpError(500);
+      res.sendHttpError(err);
+    }
   }
 });
-app.use(express.errorHandler());
 
 
 // 1. Echo sockjs server
@@ -76,7 +85,7 @@ socketServer.installHandlers(server, {prefix:'/socket'});
 
 
 server.listen(nconf.get('port'), function() {
-  log("Express server listening on port " + nconf.get('port'));
+  log.info("Express server listening on port " + nconf.get('port'));
 });
 
 module.exports = app;

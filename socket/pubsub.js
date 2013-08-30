@@ -4,7 +4,7 @@ var log = require('log')(module);
 var pubsub = mubsub(nconf.get('mongoose:uri'));
 
 pubsub.on('error', function(error) {
-  log(error);
+  log.error(error);
 });
 
 module.exports = pubsub;

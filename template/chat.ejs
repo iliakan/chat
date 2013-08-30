@@ -30,7 +30,7 @@
   });
 
   form.submit(function() {
-    connection.send({text: "test"});
+    connection.send({text: input.val()});
     input.val('');
     return false;
   });

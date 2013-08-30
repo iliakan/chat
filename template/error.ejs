@@ -1,12 +1,6 @@
 <% layout('/layout/page') -%>
 <% block('title', error.message) -%>
 
-<% if (error.status == 404) { %>
-<p class="lead">К сожалению, адрес неверен. Попробуйте поискать нужный функционал, начиная с главной страницы.</p>
-<% } else if (error.status == 401) { %>
-<p class="lead">Войдите в сайт.</p>
-<% } else if (error.status == 403) { %>
-<p class="lead">Не хватает прав.</p>
-<% } else { %>
-<p class="lead">Похоже, на сайте проблема. Мы уже работаем над её решением.</p>
-<% } %>
+<p>Извините, произошла ошибка.</p>
+
+<p><%=error.message%></p>

@@ -1,15 +1,17 @@
-var debug = require('debug');
-var path = require('path');
-
-var root = module.parent;
-while (root.parent) root = root.parent;
-var rootDir = path.dirname(path.dirname( path.normalize(root.filename) ));
+var winston = require('winston');
 
 module.exports = makeLogger;
 
+var logger = new winston.Logger({
+  transports: [
+    new winston.transports.Console({
+      colorize: true,
+      level: 'debug'
+    })
+  ]
+});
+
 function makeLogger(module) {
-  var filename = module.filename.slice(rootDir.length+1).split('/').join(':').replace(/\.[^.]+$/, '');
-  var d = debug(filename);
-  d.filename = filename;
-  return d;
+  // can be much more flexible than that O_o
+  return logger;
 }
