@@ -1,13 +1,15 @@
 var checkAuth = require('middleware/checkAuth');
 
+
 module.exports = function(app) {
-  require('./auth')(app);
 
-  app.get('/', function(req, res) {
-    res.render('index');
-  });
+  app.get('/login', require('./login').get);
 
-  app.get('/chat', checkAuth, function(req, res) {
-    res.render('chat');
-  });
+  app.post('/login', require('./login').post);
+
+  app.post("/logout", require('./logout').post);
+
+  app.get('/', require('./root').get);
+
+  app.get('/chat', checkAuth, require('./chat').get);
 };

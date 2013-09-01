@@ -1,4 +1,3 @@
-
 function Connection() {
 
   this.connection = new SockJS('/socket');
@@ -6,10 +5,10 @@ function Connection() {
   this.status = this.HANDSHAKE;
 
   this.connection.onopen = this.onOpen.bind(this);
-  this.connection.onmessage = this.onMessage.bind(this); // function(e) {print('[.] message', e.data);};
-  this.connection.onclose = this.onClose.bind(this);//function(event)  {print('[*] close ' + JSON.stringify(event));};
-
+  this.connection.onmessage = this.onMessage.bind(this);
+  this.connection.onclose = this.onClose.bind(this);
 }
+
 jQuery.extend(Connection.prototype, $.eventEmitter);
 
 ['HANDSHAKE', 'OPEN', 'CLOSED'].forEach(function(status) {
@@ -17,13 +16,18 @@ jQuery.extend(Connection.prototype, $.eventEmitter);
 });
 
 Connection.prototype.onOpen = function() {
+  var self = this;
 
-  var sid = $.cookie('sid');
-
-  this.connection.send(JSON.stringify({
-    type: 'handshake',
-    sid: sid
-  }));
+  $.ajax({
+    method: 'POST',
+    url: '/socketKey',
+    success: function(socketKey) {
+      self.send({
+        type: 'handshake',
+        socketKey: socketKey
+      });
+    }
+  });
 
 };
 

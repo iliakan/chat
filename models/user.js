@@ -48,4 +48,4 @@ schema.methods.getPublicFields = function() {
   };
 };
 
-module.exports = mongoose.model('User', schema);
+exports.User = mongoose.model('User', schema);

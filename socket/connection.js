@@ -2,14 +2,15 @@ var async = require('async');
 var util = require('util');
 var log = require('log')(module);
 var express = require('express');
-var cookieParser = express.cookieParser();
+var config = require('config');
 var connect = require('connect');
-var User = require('models/user');
+var User = require('models/user').User;
 var error = require('error').HttpError;
 var EventEmitter = require('events').EventEmitter;
 var assert = require('assert');
-
+var socketKey = require('lib/socketKey');
 var Router = require('./router');
+
 
 function Connection(connection, sessionConfig) {
   this.sessionConfig = sessionConfig;
@@ -64,37 +65,37 @@ Connection.prototype.onClose = function() {
 };
 
 
-
 Connection.prototype.onHandshake = function(message) {
   var self = this;
 
   if (message.type != 'handshake') {
-    this.close(403, "First message must be a handshake");
+    this.close(401, "First message must be a handshake");
     return;
   }
 
-  if (!message.sid) {
-    this.close(403, "First message must contain sid");
+  if (!message.socketKey) {
+    this.close(401, "First message must contain socketKey");
     return;
   }
 
-  var sid = connect.utils.parseSignedCookie(message.sid, self.sessionConfig.secret);
-  if (!sid) {
-    this.close(403, "Bad sid");
-  }
-
-
-  this.loadSession(sid, function(err, session) {
+  async.waterfall([
+    function(callback) {
+      socketKey.retrieveSidBySocketKey(self.sessionConfig.store, message.socketKey, callback);
+    },
+    function(sid, callback) {
+      self.loadSession(sid, callback);
+    },
+  ], function(err, session) {
     if (err) {
+      log.error(err);
       return self.closeOnError(err);
     }
-
-    self.sid = sid;
+    self.sid = session.id;
     self.status = self.OPEN;
+    log.info("auth complete")
     self.send({
       type: 'handshake'
     });
-
     self.emit('handshake');
 
   });
@@ -109,7 +110,7 @@ Connection.prototype.closeOnError = function(err) {
   if (err instanceof HttpError) {
     this.close(err.status, err.message);
   } else {
-    log.error(err);
+    log.error("closeOnErr", err);
     this.close();
   }
 };
@@ -132,9 +133,11 @@ Connection.prototype.onMessage = function(message) {
       callback();
     }
   ], function(err) {
-    log.error(err);
-    if (err) return self.closeOnError(err);
-  })
+    if (err) {
+      log.error(err);
+      return self.closeOnError(err);
+    }
+  });
 };
 
 Connection.prototype.loadSessionUser = function(session, callback) {
@@ -160,7 +163,7 @@ Connection.prototype.loadSession = function(sid, callback) {
     },
     function(session, callback) {
       if (!session) {
-        return callback(new HttpError(403, "Session not found:" + sid));
+        return callback(new HttpError(401, "Session not found:" + sid));
       } else {
         return callback(null, session);
       }

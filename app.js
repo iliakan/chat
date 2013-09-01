@@ -1,5 +1,3 @@
-// http://www.slideshare.net/domenicdenicola/domains-20010482
-//
 var HttpError = require('error').HttpError;
 var http = require('http');
 var path = require('path');
@@ -7,19 +5,19 @@ var log = require('log')(module);
 
 var nconf = require('config');
 
-// Создадим "приложение" express
+// Create application
 var express = require('express');
 var app = express();
 
-// Установим соединение с базой
+// Setup database
 var mongoose = require('db');
 
-// Базовые настройки
+// Basic app settings
 app.engine('ejs', require('ejs-locals'));
 app.set('views', __dirname + '/template');
 app.set('view engine', 'ejs');
 
-// Встроенные Middleware
+// Attach middleware
 app.use(express.favicon());
 if (app.get('env') == 'development') {
   app.use(express.logger('dev'));
@@ -27,36 +25,36 @@ if (app.get('env') == 'development') {
 app.use(express.bodyParser());
 app.use(express.cookieParser());
 
-// Хранилище сессий в MongoDB
+// MongoDB session store
 var MongoStore = require('connect-mongo')(express);
 
-// Будем использовать одно соединение с Mongoose для сессий
+// sessionConfig for express & sock.js
 var sessionConfig = {
   secret: nconf.get('session:secret'), // подпись для куков с сессией
   cookie: {
     path: "/",
-    maxAge: 4*3600*1000, // 4h max inactivity for session
-    httpOnly: false // expose for sockets
+    maxAge: nconf.get('session:maxAge'), // 4h max inactivity for session
+    httpOnly: true // hide from attackers
   },
   key: "sid",
+  // take connection settings from mongoose
   store: new MongoStore({mongoose_connection: mongoose.connection})
 };
 
 app.use(require('middleware/resExtensions'));
 
-// потеряет домен из-за работы с базой данных
 app.use(express.session(sessionConfig));
+
+app.use(require('lib/socketKey').middleware());
 
 app.use(require('middleware/loadUser'));
 
 app.use(require('middleware/resLocals'));
 
-// Конфигурируем стандартные запросы
 require('./routes')(app);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Обработка HttpError
 app.use(function(err, req, res, next) {
   if (typeof err == 'number') {
     err = new HttpError(err);
@@ -76,7 +74,7 @@ app.use(function(err, req, res, next) {
 });
 
 
-// 1. Echo sockjs server
+// Configure websockets
 var socketServer = require('socket')(sessionConfig);
 
 var server = app.server = http.createServer(app);

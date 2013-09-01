@@ -4,10 +4,15 @@
     <list default="true" id="676ffcd7-5799-4c6c-90b9-41222297e47d" name="Default" comment="" />
     <ignored path="chat.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/a.dummy" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1377888997454" ignored="false" />
+    <file path="/a.dummy" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378046237891" ignored="false" />
     <file path="/httpError.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1377854839641" ignored="false" />
     <file path="/app.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1377854981419" ignored="false" />
     <file path="/dummy.xml" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1377896050451" ignored="false" />
+    <file path="/login.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378037350670" ignored="false" />
+    <file path="/socketKey.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378046078258" ignored="false" />
+    <file path="/sign.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378038647825" ignored="false" />
+    <file path="/connection.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378044156940" ignored="false" />
+    <file path="/log.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378044590113" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,29 +35,16 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="10" selection-start="2166" selection-end="2166" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1377889091000" expanded="true" signature="900:1168" placeholder="{&quot;key&quot;: &quot;sid&quot;...}" />
-                <marker date="1377889091000" expanded="true" signature="972:1085" placeholder="{&quot;path&quot;: &quot;/&quot;...}" />
-                <marker date="1377889091000" expanded="true" signature="1670:1918" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+            <state line="33" column="11" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="proto.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/connect/lib/proto.js">
+      <file leaf-file-name="connection.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/connection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="12" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
+            <state line="32" column="0" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -61,25 +53,25 @@
       <file leaf-file-name="connection.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/socket/connection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="78" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.0">
+            <state line="6" column="38" selection-start="230" selection-end="230" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/socket/index.js">
+      <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="26" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
+            <state line="1" column="20" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pubsub.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/socket/pubsub.js">
+      <file leaf-file-name="user.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="11" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
+            <state line="50" column="12" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -88,34 +80,47 @@
       <file leaf-file-name="checkAuth.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/middleware/checkAuth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="4" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/error.ejs">
+      <file leaf-file-name="loadUser.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/middleware/loadUser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="3" selection-start="107" selection-end="107" vertical-scroll-proportion="-3.2692308">
+            <state line="13" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/index.ejs">
+      <file leaf-file-name="socketKey.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/socketKey.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="51" column="18" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1378046138000" expanded="true" signature="979:1549" placeholder="{...}" />
+                <marker date="1378046138000" expanded="true" signature="1023:1533" placeholder="{...}" />
+                <marker date="1378046138000" expanded="true" signature="1176:1530" placeholder="[...]" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="socketKey.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/socketKey.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="42" selection-start="366" selection-end="366" vertical-scroll-proportion="0.49312976">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chat.ejs" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/template/chat.ejs">
+      <file leaf-file-name="settings.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/settings.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="39" selection-start="790" selection-end="790" vertical-scroll-proportion="0.52896726">
+            <state line="17" column="18" selection-start="297" selection-end="297" vertical-scroll-proportion="-11.115385">
               <folding />
             </state>
           </provider>
@@ -131,23 +136,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/middleware/resExtensions.js" />
-        <option value="$PROJECT_DIR$/error/httpError.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/db.js" />
-        <option value="$PROJECT_DIR$/socket/connection.js" />
-        <option value="$PROJECT_DIR$/socket/pubsub.js" />
+        <option value="$PROJECT_DIR$/routes/socketKey.js" />
+        <option value="$PROJECT_DIR$/public/js/connection.js" />
+        <option value="$PROJECT_DIR$/middleware/socketKey.js" />
+        <option value="$PROJECT_DIR$/routes/logout.js" />
+        <option value="$PROJECT_DIR$/routes/chat.js" />
+        <option value="$PROJECT_DIR$/lib/signer.js" />
         <option value="$PROJECT_DIR$/log.js" />
-        <option value="$PROJECT_DIR$/socket/index.js" />
-        <option value="$PROJECT_DIR$/template/error.ejs" />
-        <option value="$PROJECT_DIR$/template/chat.ejs" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/lib/socketKey.js" />
+        <option value="$PROJECT_DIR$/routes/login.js" />
+        <option value="$PROJECT_DIR$/models/user.js" />
+        <option value="$PROJECT_DIR$/middleware/checkAuth.js" />
+        <option value="$PROJECT_DIR$/middleware/loadUser.js" />
+        <option value="$PROJECT_DIR$/socket/connection.js" />
+        <option value="$PROJECT_DIR$/config/settings.json" />
+        <option value="$PROJECT_DIR$/models/socketKey.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
     <option name="y" value="22" />
-    <option name="width" value="1276" />
+    <option name="width" value="1280" />
     <option name="height" value="778" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -205,7 +215,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="socket" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -219,11 +229,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -238,6 +258,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="middleware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -277,7 +311,30 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="736d1efd-3249-4f52-b734-691c1b29025d">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/models" />
+      <recent name="$PROJECT_DIR$/routes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/middleware" />
+    </key>
   </component>
   <component name="RunManager" selected="Node.js.app.js">
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
@@ -300,25 +357,25 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="ToolWindowManager">
-    <frame x="4" y="22" width="1276" height="778" extended-state="6" />
+    <frame x="0" y="22" width="1280" height="778" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6713881" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24921875" sideWeight="0.6713881" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286119" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -382,118 +439,118 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/middleware/resExtensions.js">
+    <entry file="file://$PROJECT_DIR$/routes/logout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/error/httpError.js">
+    <entry file="file://$PROJECT_DIR$/routes/chat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="31" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/index.js">
+    <entry file="file://$PROJECT_DIR$/log.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="15" column="19" selection-start="327" selection-end="327" vertical-scroll-proportion="0.38931298">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/middleware/loadUser.js">
+    <entry file="file://$PROJECT_DIR$/lib/signer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/js/less.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4187" selection-start="4331" selection-end="4331" vertical-scroll-proportion="0.0">
+        <state line="20" column="32" selection-start="410" selection-end="410" vertical-scroll-proportion="0.519084">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="8" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/socket/pubsub.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="11" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="10" selection-start="2166" selection-end="2166" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1377889091000" expanded="true" signature="900:1168" placeholder="{&quot;key&quot;: &quot;sid&quot;...}" />
-            <marker date="1377889091000" expanded="true" signature="972:1085" placeholder="{&quot;path&quot;: &quot;/&quot;...}" />
-            <marker date="1377889091000" expanded="true" signature="1670:1918" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/connect/lib/proto.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="12" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/socket/connection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="78" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="210" selection-end="210" vertical-scroll-proportion="0.17551622">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/socket/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="12" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/middleware/checkAuth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="4" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/error.ejs">
+    <entry file="file://$PROJECT_DIR$/middleware/loadUser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="3" selection-start="107" selection-end="107" vertical-scroll-proportion="-3.2692308">
+        <state line="13" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/index.ejs">
+    <entry file="file://$PROJECT_DIR$/routes/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="1" column="20" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/chat.ejs">
+    <entry file="file://$PROJECT_DIR$/socket/connection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="39" selection-start="790" selection-end="790" vertical-scroll-proportion="0.52896726">
+        <state line="6" column="38" selection-start="230" selection-end="230" vertical-scroll-proportion="-3.9230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="11" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/connection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/settings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="18" selection-start="297" selection-end="297" vertical-scroll-proportion="-11.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/socketKey.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="18" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1378046138000" expanded="true" signature="979:1549" placeholder="{...}" />
+            <marker date="1378046138000" expanded="true" signature="1023:1533" placeholder="{...}" />
+            <marker date="1378046138000" expanded="true" signature="1176:1530" placeholder="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/socketKey.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="42" selection-start="366" selection-end="366" vertical-scroll-proportion="0.49312976">
           <folding />
         </state>
       </provider>
