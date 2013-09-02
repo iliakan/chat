@@ -7,7 +7,17 @@
     "dev": "NODE_PATH=. supervisor --debug node app.js"
   },
   "dependencies": {
-    "express": "3.3.5",
-    "ejs": "*"
+    "express": "3",
+    "ejs": "*",
+    "ejs-locals": "*",
+    "connect": "*",
+    "connect-mongo": "*",
+    "async": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "mubsub": "*",
+    "nconf": "*",
+    "sockjs": "*",
+    "winston": "*"
   }
 }
