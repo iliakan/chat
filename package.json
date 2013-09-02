@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "NODE_PATH=. node app.js",
+    "start": "NODE_ENV=production NODE_PATH=. node app.js",
+    "cluster": "NODE_PATH=. node cluster.js",
     "dev": "NODE_PATH=. supervisor --debug node app.js"
   },
   "dependencies": {

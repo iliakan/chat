@@ -1,0 +1,10 @@
+{
+  "mongoose": {
+    "options": {
+      "debug": true
+    }
+  },
+  "logger": {
+    "format": "dev"
+  }
+}

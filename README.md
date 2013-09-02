@@ -17,7 +17,7 @@
 # Использование
 
 1. `git clone`
-2. `npm start`
+2. `npm start` (или `npm run dev` или `npm run cluster`)
 3. `open http://127.0.0.1:3000`
 
 Войти в сайт можно будет через ссылку "Войти" справа.

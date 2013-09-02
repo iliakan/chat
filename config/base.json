@@ -16,5 +16,8 @@
   },
   "socketKey": {
     "maxAge": 4000
+  },
+  "logger": {
+    "format": "default"
   }
 }

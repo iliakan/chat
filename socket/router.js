@@ -1,6 +1,6 @@
 var pubsub = require('./pubsub');
 var HttpError = require('error').HttpError;
-var log = require('log')(module);
+var log = require('lib/log')(module);
 
 var chat = pubsub.channel('chat');
 

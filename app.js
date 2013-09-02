@@ -11,16 +11,16 @@
 var HttpError = require('error').HttpError;
 var http = require('http');
 var path = require('path');
-var log = require('log')(module);
+var log = require('lib/log')(module);
 
-var nconf = require('config');
+var config = require('config');
 
 // Create application
 var express = require('express');
 var app = express();
 
 // Setup database
-var mongoose = require('db');
+var mongoose = require('lib/mongoose');
 
 // Basic app settings
 app.engine('ejs', require('ejs-locals'));
@@ -29,9 +29,9 @@ app.set('view engine', 'ejs');
 
 // Attach middleware
 app.use(express.favicon());
-if (app.get('env') == 'development') {
-  app.use(express.logger('dev'));
-}
+
+app.use(express.logger( config.get('logger:format') ) );
+
 app.use(express.bodyParser());
 app.use(express.cookieParser());
 
@@ -40,10 +40,10 @@ var MongoStore = require('connect-mongo')(express);
 
 // sessionConfig for express & sock.js
 var sessionConfig = {
-  secret: nconf.get('session:secret'), // подпись для куков с сессией
+  secret: config.get('session:secret'), // подпись для куков с сессией
   cookie: {
     path: "/",
-    maxAge: nconf.get('session:maxAge'), // 4h max inactivity for session
+    maxAge: config.get('session:maxAge'), // 4h max inactivity for session
     httpOnly: true // hide from attackers
   },
   key: "sid",
@@ -92,8 +92,8 @@ var server = app.server = http.createServer(app);
 socketServer.installHandlers(server, {prefix:'/socket'});
 
 
-server.listen(nconf.get('port'), function() {
-  log.info("Express server listening on port " + nconf.get('port'));
+server.listen(config.get('port'), function() {
+  log.info("Express server listening on port " + config.get('port'));
 });
 
 module.exports = app;

@@ -1,6 +1,6 @@
 var async = require('async');
 var util = require('util');
-var log = require('log')(module);
+var log = require('lib/log')(module);
 var express = require('express');
 var config = require('config');
 var connect = require('connect');

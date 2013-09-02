@@ -1,6 +1,6 @@
 var sockjs = require('sockjs');
 var Connection = require('./connection').Connection;
-var log = require('log')(module);
+var log = require('lib/log')(module);
 
 module.exports = function(sessionConfig) {
 
