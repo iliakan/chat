@@ -10,23 +10,39 @@
 
 <script>
   var input = $('#room input');
-  var ul  = $('#room ul');
+  var ul = $('#room ul');
   var form = $('#room form');
 
-  var connection = new Connection();
-  connection.on('open', function()  {
-    $('<li>').text('соединение установлено').appendTo(ul);
+  function printStatus(status) {
+    $('<li class="status">').text('соединение установлено').appendTo(ul);
+  }
+
+  function printMessage(username, text) {
+    $('<li>').append(
+            $('<i>').text(username)
+        ).append('> ' + text)
+        .appendTo(ul);
+  }
+
+  var connection = new Connection({
+    prefix: "/socket",
+    socket: {debug: true},
+    debug: true
+  });
+
+  connection.on('open', function() {
+    printStatus('соединение установлено');
+  });
+  connection.on('disconnect', function() {
+    printStatus('соединение потеряно');
   });
 
   connection.on('message', function(e, message) {
-    $('<li>').append(
-        $('<i>').text(message.username)
-    ).append('> ' + message.text)
-     .appendTo(ul);
+    printMessage(message.username, message.text);
   });
 
-  connection.on('close', function(event)  {
-    $('<li>').text('соединение закрыто').appendTo(ul);
+  connection.on('close', function(event) {
+    printStatus('соединение закрыто');
   });
 
   form.submit(function() {

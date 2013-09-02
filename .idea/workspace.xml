@@ -11,7 +11,7 @@
     <file path="/login.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378037350670" ignored="false" />
     <file path="/socketKey.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378046078258" ignored="false" />
     <file path="/sign.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378038647825" ignored="false" />
-    <file path="/connection.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378044156940" ignored="false" />
+    <file path="/connection.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378111353482" ignored="false" />
     <file path="/log.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378044590113" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +35,10 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="11" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="22" column="27" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,7 +46,7 @@
       <file leaf-file-name="connection.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/connection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+            <state line="74" column="5" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -53,25 +55,7 @@
       <file leaf-file-name="connection.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/socket/connection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="38" selection-start="230" selection-end="230" vertical-scroll-proportion="-3.9230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="20" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkAuth.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middleware/checkAuth.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
+            <state line="6" column="38" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -102,16 +86,34 @@
       <file leaf-file-name="chat.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template/chat.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="32" selection-start="151" selection-end="151" vertical-scroll-proportion="0.13513513">
+            <state line="22" column="24" selection-start="560" selection-end="560" vertical-scroll-proportion="0.5675676">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="socketKey.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/socketKey.js">
+      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="14" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/base.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="21" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="3" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,7 +122,7 @@
       <file leaf-file-name="settings.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/settings.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="18" selection-start="297" selection-end="297" vertical-scroll-proportion="-11.115385">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,28 +138,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/js/connection.js" />
-        <option value="$PROJECT_DIR$/middleware/socketKey.js" />
         <option value="$PROJECT_DIR$/routes/logout.js" />
         <option value="$PROJECT_DIR$/routes/chat.js" />
         <option value="$PROJECT_DIR$/lib/signer.js" />
         <option value="$PROJECT_DIR$/log.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/lib/socketKey.js" />
         <option value="$PROJECT_DIR$/routes/login.js" />
         <option value="$PROJECT_DIR$/models/user.js" />
         <option value="$PROJECT_DIR$/middleware/checkAuth.js" />
         <option value="$PROJECT_DIR$/middleware/loadUser.js" />
         <option value="$PROJECT_DIR$/socket/connection.js" />
-        <option value="$PROJECT_DIR$/config/settings.json" />
         <option value="$PROJECT_DIR$/models/socketKey.js" />
+        <option value="$PROJECT_DIR$/config/settings.json" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/js/connection.js" />
+        <option value="$PROJECT_DIR$/public/css/base.css" />
         <option value="$PROJECT_DIR$/template/chat.ejs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="4" />
     <option name="y" value="22" />
-    <option name="width" value="1280" />
+    <option name="width" value="1276" />
     <option name="height" value="778" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -186,7 +189,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,6 +291,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -351,6 +371,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -403,14 +424,14 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="778" extended-state="6" />
+    <frame x="4" y="22" width="1276" height="778" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24921875" sideWeight="0.6713881" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2492163" sideWeight="0.6713881" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -485,60 +506,24 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="327" selection-end="327" vertical-scroll-proportion="0.38931298">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/signer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="32" selection-start="410" selection-end="410" vertical-scroll-proportion="0.519084">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="210" selection-end="210" vertical-scroll-proportion="0.17551622">
-          <folding />
-        </state>
+        <state line="7" column="0" selection-start="210" selection-end="210" vertical-scroll-proportion="0.17551622" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/socket/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="12" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="50" column="12" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/middleware/checkAuth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middleware/loadUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="4" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/login.js">
@@ -548,23 +533,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/socket/connection.js">
+    <entry file="file://$PROJECT_DIR$/models/socketKey.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="38" selection-start="230" selection-end="230" vertical-scroll-proportion="-3.9230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/connection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+        <state line="11" column="14" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/settings.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="18" selection-start="297" selection-end="297" vertical-scroll-proportion="-11.115385">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="3" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middleware/loadUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -580,23 +572,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/socketKey.js">
+    <entry file="file://$PROJECT_DIR$/socket/connection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
+        <state line="6" column="38" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="11" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
+        <state line="22" column="27" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/connection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="5" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="21" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/chat.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="32" selection-start="151" selection-end="151" vertical-scroll-proportion="0.13513513">
+        <state line="22" column="24" selection-start="560" selection-end="560" vertical-scroll-proportion="0.5675676">
           <folding />
         </state>
       </provider>
