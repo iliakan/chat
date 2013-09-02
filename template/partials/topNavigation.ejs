@@ -7,7 +7,7 @@
   </ul>
   <ul class="nav navbar-nav navbar-right">
     <% if (user) { %>
-    <li><a href="/logout">Выйти</a></li>
+    <li><a href="" onclick="$('<form method=POST action=/logout>').submit();return false">Выйти</a></form></li>
     <% } else { %>
     <li><a href="/login">Войти</a></li>
     <% } %>

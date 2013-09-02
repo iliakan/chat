@@ -1,4 +1,5 @@
 var pubsub = require('./pubsub');
+var HttpError = require('error').HttpError;
 var log = require('log')(module);
 
 var chat = pubsub.channel('chat');
@@ -8,7 +9,7 @@ function Router(connection) {
 
   this.connection = connection;
 
-  this.connection.on('handshake', function() {
+  this.connection.on('open', function(message) {
 
     var subscription = chat.subscribe('room', function(msg) {
       self.connection.send(msg);
@@ -24,12 +25,17 @@ function Router(connection) {
 Router.prototype.route = function(message) {
   var self = this;
 
+  if (!this.connection.user) {
+    this.connection.close(401, "Authentication required to chat");
+    return;
+  }
+
   chat.publish('room', {
-    username: message.user.get('username'),
+    username: this.connection.user.get('username'),
     text: message.text
   });
 
-  message.session.save();
+  this.connection.session.save();
 };
 
 module.exports = Router;

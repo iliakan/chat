@@ -11,7 +11,7 @@
     <file path="/login.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378037350670" ignored="false" />
     <file path="/socketKey.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378046078258" ignored="false" />
     <file path="/sign.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378038647825" ignored="false" />
-    <file path="/connection.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378111353482" ignored="false" />
+    <file path="/connection.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378131874124" ignored="false" />
     <file path="/log.js" changelist="676ffcd7-5799-4c6c-90b9-41222297e47d" time="1378044590113" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +35,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
+            <state line="32" column="2" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -43,19 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connection.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="connection.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/connection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="0" selection-start="2164" selection-end="2164" vertical-scroll-proportion="0.9480916">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.eventEmitter.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/jquery.eventEmitter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="55" column="16" selection-start="1219" selection-end="1227" vertical-scroll-proportion="-11.615385">
               <folding />
             </state>
           </provider>
@@ -64,16 +55,37 @@
       <file leaf-file-name="connection.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/socket/connection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="9" selection-start="1615" selection-end="1615" vertical-scroll-proportion="0.0">
+            <state line="61" column="23" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loadUser.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middleware/loadUser.js">
+      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/socket/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+            <state line="33" column="29" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="1" selection-start="531" selection-end="531" vertical-scroll-proportion="0.29310346">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chat.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/layout/chat.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="-14.384615">
               <folding />
             </state>
           </provider>
@@ -82,48 +94,10 @@
       <file leaf-file-name="socketKey.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/socketKey.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="18" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.0">
+            <state line="38" column="6" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1378046138000" expanded="true" signature="979:1549" placeholder="{...}" />
-                <marker date="1378046138000" expanded="true" signature="1023:1533" placeholder="{...}" />
-                <marker date="1378046138000" expanded="true" signature="1176:1530" placeholder="[...]" />
+                <marker date="1378130408000" expanded="true" signature="995:1041" placeholder="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chat.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/chat.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="40" selection-start="397" selection-end="397" vertical-scroll-proportion="-5.4615383">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/app.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/base.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="21" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="3" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -138,22 +112,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/routes/logout.js" />
-        <option value="$PROJECT_DIR$/routes/chat.js" />
-        <option value="$PROJECT_DIR$/lib/signer.js" />
-        <option value="$PROJECT_DIR$/log.js" />
-        <option value="$PROJECT_DIR$/lib/socketKey.js" />
         <option value="$PROJECT_DIR$/routes/login.js" />
         <option value="$PROJECT_DIR$/models/user.js" />
         <option value="$PROJECT_DIR$/middleware/checkAuth.js" />
         <option value="$PROJECT_DIR$/middleware/loadUser.js" />
-        <option value="$PROJECT_DIR$/socket/connection.js" />
         <option value="$PROJECT_DIR$/models/socketKey.js" />
         <option value="$PROJECT_DIR$/config/settings.json" />
         <option value="$PROJECT_DIR$/public/css/base.css" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/template/chat.ejs" />
         <option value="$PROJECT_DIR$/public/js/connection.js" />
+        <option value="$PROJECT_DIR$/cluster.js" />
+        <option value="$PROJECT_DIR$/template/partials/topNavigation.ejs" />
+        <option value="$PROJECT_DIR$/lib/socketKey.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/socket/connection.js" />
+        <option value="$PROJECT_DIR$/socket/router.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -218,6 +192,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -375,10 +385,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="PublishConfig">
@@ -506,93 +520,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/socket/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="12" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middleware/checkAuth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="20" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/socketKey.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/settings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="3" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middleware/loadUser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/socketKey.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="18" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1378046138000" expanded="true" signature="979:1549" placeholder="{...}" />
-            <marker date="1378046138000" expanded="true" signature="1023:1533" placeholder="{...}" />
-            <marker date="1378046138000" expanded="true" signature="1176:1530" placeholder="[...]" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="21" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/socket/connection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="9" selection-start="1615" selection-end="1615" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -611,9 +541,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cluster.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="18" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="1" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/partials/topNavigation.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="16" selection-start="281" selection-end="281" vertical-scroll-proportion="0.24837662">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/layout/chat.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="-14.384615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/layout/page.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/socketKey.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="6" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1378130408000" expanded="true" signature="995:1041" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="2" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/connection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="0" selection-start="2164" selection-end="2164" vertical-scroll-proportion="0.9480916">
+        <state line="55" column="16" selection-start="1219" selection-end="1227" vertical-scroll-proportion="-11.615385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket/connection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="23" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="29" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="1" selection-start="531" selection-end="531" vertical-scroll-proportion="0.29310346">
           <folding />
         </state>
       </provider>
