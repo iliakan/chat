@@ -70,13 +70,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="26" selection-start="698" selection-end="698" vertical-scroll-proportion="0.47962382">
+            <state line="5" column="60" selection-start="260" selection-end="260" vertical-scroll-proportion="-3.148148">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resExtensions.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/middleware/resExtensions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="4" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/login.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ejs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/template/index.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="18" selection-start="426" selection-end="426" vertical-scroll-proportion="0.5675676">
               <folding />
             </state>
           </provider>
@@ -112,8 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/routes/login.js" />
-        <option value="$PROJECT_DIR$/models/user.js" />
         <option value="$PROJECT_DIR$/middleware/checkAuth.js" />
         <option value="$PROJECT_DIR$/middleware/loadUser.js" />
         <option value="$PROJECT_DIR$/models/socketKey.js" />
@@ -128,6 +153,8 @@
         <option value="$PROJECT_DIR$/socket/connection.js" />
         <option value="$PROJECT_DIR$/socket/router.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/middleware/resExtensions.js" />
+        <option value="$PROJECT_DIR$/template/index.ejs" />
       </list>
     </option>
   </component>
@@ -520,27 +547,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/middleware/loadUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/jquery.eventEmitter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/chat.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="40" selection-start="397" selection-end="397" vertical-scroll-proportion="-5.4615383">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cluster.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="18" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
@@ -634,7 +640,28 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="26" selection-start="698" selection-end="698" vertical-scroll-proportion="0.47962382">
+        <state line="5" column="60" selection-start="260" selection-end="260" vertical-scroll-proportion="-3.148148">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middleware/resExtensions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="4" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/login.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="18" selection-start="426" selection-end="426" vertical-scroll-proportion="0.5675676">
           <folding />
         </state>
       </provider>

@@ -12,5 +12,12 @@ module.exports = function(req, res, next) {
     }
   };
 
+  res.locals.helpers = {
+    now: function() {
+      return new Date().toString();
+    }
+  };
+
   next();
+
 };
