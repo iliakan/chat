@@ -27,6 +27,10 @@ Connection.prototype.onOpen = function() {
 
   this.reconnectAttempt = 0;
 
+  if (this.options.debug) {
+    console.log("socket open");
+  }
+
   $.ajax({
     method: 'POST',
     url: '/socketKey',
@@ -44,8 +48,16 @@ Connection.prototype.onMessage = function(e) {
 
   var message = JSON.parse(e.data);
 
+  if (this.options.debug) {
+    console.log("message:", message);
+  }
+
   if (this.status == this.CONNECTING) {
     if (message.type == 'handshake') {
+      if (this.options.debug) {
+        console.log("handshake received");
+      }
+
       this.status = this.OPEN;
       this.emit('open');
     } else {
@@ -61,7 +73,7 @@ Connection.prototype.onClose = function(event) {
   var self = this;
 
   if (this.options.debug) {
-    console.log(event);
+    console.log("close", event);
   }
 
   if (event.code == 401) {
@@ -71,8 +83,11 @@ Connection.prototype.onClose = function(event) {
     return;
   }
 
+  if (this.status == this.OPEN) {
+    this.emit('disconnect');
+  }
+
   this.status = this.CONNECTING;
-  this.emit('disconnect');
 
   var delay = this.RECONNECT_DELAYS[this.reconnectAttempt]
   || this.RECONNECT_DELAYS[this.RECONNECT_DELAYS.length-1];
