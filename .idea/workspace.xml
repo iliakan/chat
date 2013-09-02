@@ -70,13 +70,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="60" selection-start="260" selection-end="260" vertical-scroll-proportion="-3.148148">
+            <state line="12" column="51" selection-start="622" selection-end="622" vertical-scroll-proportion="0.33170733">
               <folding />
             </state>
           </provider>
@@ -100,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ejs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="18" selection-start="426" selection-end="426" vertical-scroll-proportion="0.5675676">
+            <state line="21" column="18" selection-start="426" selection-end="426" vertical-scroll-proportion="-13.730769">
               <folding />
             </state>
           </provider>
@@ -152,9 +152,9 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/socket/connection.js" />
         <option value="$PROJECT_DIR$/socket/router.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/middleware/resExtensions.js" />
         <option value="$PROJECT_DIR$/template/index.ejs" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -635,16 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="60" selection-start="260" selection-end="260" vertical-scroll-proportion="-3.148148">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middleware/resExtensions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="4" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
@@ -661,7 +651,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="18" selection-start="426" selection-end="426" vertical-scroll-proportion="0.5675676">
+        <state line="21" column="18" selection-start="426" selection-end="426" vertical-scroll-proportion="-13.730769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="51" selection-start="622" selection-end="622" vertical-scroll-proportion="0.33170733">
           <folding />
         </state>
       </provider>
