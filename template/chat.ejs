@@ -46,7 +46,12 @@
   });
 
   form.submit(function() {
-    connection.send({text: input.val()});
+    try {
+      connection.send({text: input.val()});
+    } catch(e) {
+      console.log(e);
+      return false;
+    }
     input.val('');
     return false;
   });

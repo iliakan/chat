@@ -1,3 +1,7 @@
 li.status {
   font-style: italic;
 }
+
+.navbar-nav.navbar-right > li > a {
+  font-weight: bold;
+}

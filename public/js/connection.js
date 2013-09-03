@@ -35,10 +35,10 @@ Connection.prototype.onOpen = function() {
     method: 'POST',
     url: '/socketKey',
     success: function(socketKey) {
-      self.send({
+      self.socket.send(JSON.stringify({
         type: 'handshake',
         socketKey: socketKey
-      });
+      }));
     }
   });
 
@@ -104,5 +104,8 @@ Connection.prototype.onClose = function(event) {
 };
 
 Connection.prototype.send = function(message) {
+  if (this.status != this.OPEN) {
+    throw new Error("Connection is not open");
+  }
   this.socket.send(JSON.stringify(message));
 };
