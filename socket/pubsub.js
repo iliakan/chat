@@ -1,7 +1,8 @@
 var mubsub = require('mubsub');
-var nconf = require('nconf');
+var config = require('nconf');
 var log = require('lib/log')(module);
-var pubsub = mubsub(nconf.get('mongoose:uri'));
+
+var pubsub = mubsub(config.get('mongoose:uri'));
 
 pubsub.on('error', function(error) {
   log.error(error);

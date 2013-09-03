@@ -1,6 +1,6 @@
 {
   "name": "chat",
-  "version": "0.1",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "NODE_ENV=production NODE_PATH=. node app.js",

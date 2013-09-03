@@ -1,16 +1,6 @@
-/*
- sockjs-node has some internal state - mapping from sockjs session number to an
- internal structure (consisting of, above all others outgoing message buffer).
-  As node cluster is basically equivalent to fork, it doesn't share this state across
-   forks and will not work with sockjs-node. Additionally, I can't see how this state
-   could be shared and there doesn't seem to be any option for doing a custom routing
-   (ie: forward all requests from session A to worker B).
- */
-
-
-var HttpError = require('error').HttpError;
 var http = require('http');
 var path = require('path');
+var HttpError = require('error').HttpError;
 var log = require('lib/log')(module);
 
 var config = require('config');
