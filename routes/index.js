@@ -1,3 +1,6 @@
+/**
+ * Если роутов станет много -- их можно разбить по иерархии файлов
+ */
 var checkAuth = require('middleware/checkAuth');
 
 
