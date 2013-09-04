@@ -5,7 +5,7 @@
   "scripts": {
     "start": "NODE_ENV=production NODE_PATH=. node app.js",
     "cluster": "NODE_PATH=. node cluster.js",
-    "dev": "NODE_PATH=. supervisor --debug node app.js"
+    "dev": "NODE_PATH=. supervisor --debug app.js"
   },
   "dependencies": {
     "express": "3",

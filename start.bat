@@ -1,3 +1,3 @@
 set NODE_PATH=.
-set NODE_ENV=development
+set NODE_ENV=production
 node app
