@@ -1,5 +1,6 @@
 var http = require('http');
-var path = require('path');
+var join = require('path').join;
+
 var HttpError = require('error').HttpError;
 var log = require('lib/log')(module);
 
@@ -53,7 +54,7 @@ app.use(require('middleware/resLocals'));
 
 require('./routes')(app);
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(join(__dirname, 'public')));
 
 app.use(function(err, req, res, next) {
   if (typeof err == 'number') {
@@ -80,7 +81,6 @@ var socketServer = require('socket')(sessionConfig);
 var server = app.server = http.createServer(app);
 
 socketServer.installHandlers(server, {prefix:'/socket'});
-
 
 server.listen(config.get('port'), function() {
   log.info("Express server listening on port " + config.get('port'));

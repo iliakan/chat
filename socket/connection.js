@@ -91,7 +91,7 @@ Connection.prototype.onHandshake = function(message) {
       return self.closeOnError(err);
     }
     self._setStatus(self.OPEN);
-    log.info("auth complete")
+    log.info("auth complete");
     self.send({
       type: 'handshake'
     });

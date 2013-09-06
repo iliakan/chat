@@ -9,8 +9,10 @@ function HttpError(status, message) {
   this.status = status;
   this.message = message || http.STATUS_CODES[status] || "Error";
 }
+
 util.inherits(HttpError, Error);
 module.exports = HttpError;
+
 HttpError.prototype.name = 'HttpError';
 
 

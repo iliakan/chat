@@ -1,7 +1,12 @@
 {
   "mongoose": {
     "options": {
-      "debug": true
+      "debug": true,
+      "server": {
+        "socketOptions": {
+          "keepAlive": 1
+        }
+      }
     }
   },
   "logger": {

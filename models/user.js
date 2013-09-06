@@ -40,12 +40,4 @@ schema.methods.checkPassword = function(password) {
   return this.encryptPassword(password) === this.hashedPassword;
 };
 
-schema.methods.getPublicFields = function() {
-  return {
-    username: this.username,
-    created: this.created,
-    id: this.id
-  };
-};
-
 exports.User = mongoose.model('User', schema);
