@@ -15,7 +15,7 @@ var mongoose = require('lib/mongoose');
 
 // Basic app settings
 app.engine('ejs', require('ejs-locals'));
-app.set('views', __dirname + '/template');
+app.set('views', path.join(__dirname, '/template'));
 app.set('view engine', 'ejs');
 
 // Attach middleware
