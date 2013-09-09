@@ -38,7 +38,13 @@
   });
 
   connection.on('message', function(e, message) {
-    printMessage(message.username, message.text);
+    if (message.text) {
+      printMessage(message.username, message.text);
+    } else if (message.status) {
+      printStatus(message.username + ': ' + message.status);
+    } else {
+      throw new Error("Bad message: " + message);
+    }
   });
 
   connection.on('close', function(event) {

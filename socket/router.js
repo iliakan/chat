@@ -17,6 +17,16 @@ function Router(connection) {
 
     self.connection.on('close', function() {
       subscription.unsubscribe();
+
+      chat.publish('room', {
+        username: self.connection.user.get('username'),
+        status: 'вышел из чата'
+      });
+    });
+
+    chat.publish('room', {
+      username: self.connection.user.get('username'),
+      status: 'зашёл в чат'
     });
 
   });

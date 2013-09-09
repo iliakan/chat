@@ -156,9 +156,6 @@ Connection.prototype.loadSessionUser = function(sid, callback) {
   ], callback);
 };
 
-
-
-
 Connection.prototype.onMessage = function(message) {
   var self = this;
 
